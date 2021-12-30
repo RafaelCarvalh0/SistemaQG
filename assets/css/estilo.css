@@ -1,0 +1,372 @@
+.topo { /*body*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background:#000000;
+    background-size:cover;
+    /*min-height: 774px;*/
+    justify-content: center;
+}
+
+.topo-login { /*body-login*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+.header {
+    margin-top: 40px;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.header img {
+    margin: 0 auto;
+    max-width: 350px;
+    min-width: 350px;
+}
+
+section {
+    margin-top: 40px;
+}
+
+.campo {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    max-width: 300px;
+    min-width: 240px;
+    background-color: #f2f2f2;
+    opacity: 90%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 366px)
+{
+    .header img {
+        margin: 0px 20px;
+        margin-bottom: -10px;
+        text-align: center;
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    .topo-login {
+        margin-top: 30px; 
+        margin-bottom: 200px;
+    }
+    
+  .campo
+   {
+    min-width: 280px;
+    margin: 0 30px;
+    text-align: center;
+   }
+}
+
+.footer {
+    margin: 30px auto;
+    text-align: center;
+    color: white;
+    min-width: 350px;
+}
+
+form input {
+    margin: 0 auto;
+    min-width: 200px;
+    padding: 10px;
+    margin-top: 12px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #e0e0e0;
+}
+
+form input[type=text]:focus{
+    background-color: #00000031;
+}
+
+form input[type=submit] {
+    color: white;
+    width: 150px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background: #000000;
+}
+
+form input[type=submit]:hover {
+    text-decoration: none;
+    background-color: #242424;
+}
+
+form input:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+form a{
+    color: red;
+    text-decoration: none;
+}
+
+form a:hover{
+    color: rgb(180, 3, 3);
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------- Página index ------ */
+
+.error {
+    font-size: 0.8em;
+    color: red;
+    margin-bottom: 10px;
+    border-radius:5px;
+    /*text-align: center;*/
+    font-weight: 600;
+    animation: aviso 0.7s infinite alternate;
+}
+
+@keyframes aviso {
+    from {
+      color: rgb(100, 0, 0);
+    }
+    to {
+      bcolor: red;
+    }
+  }
+
+.header2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.header2 img {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 330px;
+    min-width: 300px;
+}
+
+#menu {
+    max-width: 600px;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.096);
+}
+
+#menu{
+    min-width: 300px !important;
+    margin: 30px auto;
+}
+
+#menu li {
+    min-width: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#menu a {
+    padding: 3px;
+}
+
+.nav-item a:hover {
+    color: #F8E500;
+}
+
+
+#aviso {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px 20px;
+    color: white;
+    min-width: 300px;
+}
+
+.col-4{
+    margin: 20px ;
+    border-radius: 5px;
+    background-color: rgba(175, 47, 47, 0.7);
+    min-width: 250px !important;
+    width: 300px !important;
+    /*border-radius: 80px; 
+    height: 150px;
+    max-width: 200px !important;*/
+    
+}
+
+.col-sm-2 {
+    border: 1px solid #4E94A0;
+    /*text-align: center;
+    padding: 20px; letras centrais
+    min-width: 150px;
+    max-width: 150px !important;*/
+    white-space: normal;
+}
+
+
+.col-sm-3 {
+    box-sizing: border-box;
+    background-color: #01b18bb6 !important;
+    color: white;
+}
+
+.col-sm-3 b{
+    color: black;
+}
+
+.col-4 p {
+    Word-wrap:break-Word;
+}
+
+#usp {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    color: #000000;
+    text-shadow: 2px 2px 3px #515357;
+}
+
+#linha {
+    margin-top: 50px !important;
+}
+
+#linha p {
+    color: white;
+}
+
+
+
+
+/* ------------------------------------------------------ PÁGINA JANTISTA   ---------------------------*/
+
+.jantista {
+    margin: 0 auto;
+    /*min-width: 340px; apagar se der merda*/
+}
+
+.jantista div{
+    border: 1px solid rgba(204, 204, 204, 0.521);
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 320px;
+    min-width: 300px;
+}
+
+.jantista button {
+    border: 1px solid black;
+    margin-top: 5px;
+    color: white;
+    background-color: rgb(197, 12, 12);
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.jantista button:hover {
+    background-color: #248d3d;
+}
+
+#jantista-nao-confirmado {
+    background-color: rgba(175, 47, 47, 0.8) !important;
+}
+
+
+/*-------------------------------------------------------------TELA DE CONFIRMAÇÃO -------------------------------*/
+
+        #body-confirmacao {
+            background-color: black;
+        }
+
+        #logo-confirmacao {
+            background-color: black;
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #logo-confirmacao>img {
+            min-width: 200px;
+            margin: 50px auto 10px auto;
+            text-align: center;
+        }
+
+        #botao-sair {
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        #botao-sair h1 {
+            font-size: 1.6em;
+            color: #FF3030;
+        }
+
+        #botao-sair button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 1.5em;
+            width: 100px;
+            height: 50px;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: #D60000;
+            color: white;
+            border: 1px solid #CCC;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        #botao-sair button:hover {
+            background-color: #A00000;
+        }
+
+
+
+
+
+
+/*-------------------------------------------------------------TELA DE CONFIRMAÇÃO (FORA DO HORÀRIO DE TRABALHO -------------------------------*/
+
+#logo-tela-confirmar {
+    background-color: black;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#logo-tela-confirmar>img {
+    min-width: 200px;
+    margin: 50px auto 10px auto;
+    text-align: center;
+}
+
+#botao-sair h1 {
+    font-family: 'geneva';
+    font-size: 1.6em;
+    text-align: center;
+    margin: 20px 20px;
+    color: #FF3030;
+    min-width: 220px;
+}
+
+#botao-sair {
+    margin: 50px auto;
+    text-align: center;
+}
+
+#botao-sair button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.2em;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #D60000;
+    color: white;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#botao-sair button:hover {
+    background-color: #A00000;
+}

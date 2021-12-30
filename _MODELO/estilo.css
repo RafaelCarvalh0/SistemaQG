@@ -1,0 +1,231 @@
+.topo { /*body*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background:#000000;
+    background-size:cover;
+    /*min-height: 774px;*/
+    justify-content: center;
+}
+
+.topo-login { /*body-login*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: url(imagens/fundo.jpg) no-repeat; 
+    background-size:cover ;
+}
+
+.header {
+    margin-top: 40px;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.header img {
+    margin: 0 auto;
+    max-width: 350px;
+    min-width: 350px;
+}
+
+section {
+    margin-top: 40px;
+}
+
+.campo {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    max-width: 300px;
+    min-width: 240px;
+    background-color: #f2f2f2;
+    opacity: 90%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 366px)
+{
+    .header img {
+        margin: 0px 20px;
+        margin-bottom: -10px;
+        text-align: center;
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    .topo-login {
+        margin-top: 30px; 
+        margin-bottom: 200px;
+    }
+    
+  .campo
+   {
+    min-width: 280px;
+    margin: 0 30px;
+    text-align: center;
+   }
+}
+
+.footer {
+    margin: 30px auto;
+    text-align: center;
+    color: white;
+    min-width: 350px;
+}
+
+form input {
+    margin: 0 auto;
+    min-width: 200px;
+    padding: 10px;
+    margin-top: 12px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #e0e0e0;
+}
+
+form input[type=button] {
+    color: white;
+    width: 150px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background: #000000;
+}
+
+form input[type=button]:hover {
+    text-decoration: none;
+    background-color: #242424;
+}
+
+form input:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+form a{
+    color: red;
+    text-decoration: none;
+}
+
+form a:hover{
+    color: rgb(180, 3, 3);
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------- Página Home ------ */
+
+.header2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.header2 img {
+    margin: 0 auto;
+    max-width: 350px;
+    min-width: 300px;
+}
+
+#menu {
+    max-width: 550px;
+    min-width: 350px !important;
+    margin: 30px auto;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.096);
+}
+
+.nav-item a:hover {
+    color: #F8E500;
+}
+
+
+#aviso {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 50px 20px;
+    color: white;
+    text-align: center;
+    min-width: 320px;
+}
+
+#linha {
+    margin: 70px auto;
+    /*border: 1px solid green;*/
+    min-width: 325px !important;
+    max-width: 900px;
+    justify-content: center;
+    /*layout padrão pequeno*/
+}
+
+.col-4{
+    /*padding: 30px;*/
+    margin: 50px auto;
+    border-radius: 80px; 
+    height: 150px;
+    max-width: 150px;
+    min-width: 300px;
+    border: 1px solid green;
+}
+
+.col-sm-2 {
+    border: 3px solid #4E94A0;
+    text-align: center;
+    padding: 20px; /*letras centrais*/
+    min-width: 150px;
+    max-width: 150px !important;
+    white-space: normal;
+}
+
+.col-sm-2 p {
+    Word-wrap:break-Word;
+}
+
+#linha a {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px #515357;
+    font-weight: bold;
+    background-color: rgb(200, 200, 201);
+    font-size: 1.2em;
+}
+
+#linha b {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    color: #4E94A0;
+    text-shadow: 2px 2px 3px #515357;
+}
+
+#linha a:hover {
+    background-color: #a8cacf ;
+}
+
+
+/* ------------------------------------------------------ PÁGINA JANTISTA ---------------------------*/
+
+.jantista {
+    margin: 0 auto;
+}
+
+.jantista div{
+    border: 1px solid rgba(204, 204, 204, 0.521);
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 390px;
+    min-width: 350px;
+}
+
+.jantista button {
+    border: 1px solid black;
+    margin-top: 5px;
+    color: white;
+    background-color: rgb(197, 12, 12);
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.jantista button:hover {
+    background-color: #FEE800;
+    color: black;
+}
+
