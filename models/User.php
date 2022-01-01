@@ -9,6 +9,7 @@ class User {
     public $journey;
     public $login;
     public $password;
+    public $confirmado;
     public $token;
 }
 
