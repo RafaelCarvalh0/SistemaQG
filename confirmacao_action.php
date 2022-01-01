@@ -15,7 +15,7 @@ $re = $_GET['re'];
 $nome = $_GET['nome'];
 $departamento = $_GET['departamento'];
 $jornada = $_GET['jornada'];
-$confirmou = 0;
+$confirmado = $_GET['confirmado'];
 
 
 mysqli_select_db($con, "qg_system") or die("Sem acesso ao DB, Entre em //contato com o Administrador");
@@ -46,42 +46,7 @@ function consultar($con, $id)
 
 $dados = consultar($con, $id);
 
-
-
 ?>
-
-
-<!-- USUÁRIO COMUM E QUE JÁ CONFIRMOU -->
-
-<?php if ($userInfo->perfil == 'comum' && $dados[0]['confirmado'] == 1) : ?>
-
-    <!DOCTYPE html>
-    <html>
-
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-        <link rel="stylesheet" href="<?= $base; ?>/assets/css/estilo.css" />
-    </head>
-
-    <body id="body-confirmacao">
-
-        <div id="logo-confirmacao">
-            <img src="<?= $base; ?>/assets/images/LOGO QG2.png" width="250" alt="">
-        </div>
-
-        <div id="botao-sair">
-            <h1>VOCÊ JÁ CONFIRMOU SEU POSTO!</h1>
-            <a href="<?= $base; ?>/login.php">
-                <button> SAIR </button>
-            </a>
-        </div>
-
-    </body>
-
-<?php endif; ?>
-
 
 <!-- USUÁRIO COMUM E QUE AINDA NÃO CONFIRMOU -->
 
