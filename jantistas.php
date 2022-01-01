@@ -24,7 +24,7 @@ function postos($con)
 
 function limparJantista($con, $id)
 {
-    $sql = ("UPDATE usuarios SET confirmado = 0");
+    $sql = ("UPDATE usuarios SET confirmado = 0 WHERE journey = '19:00 AS 23:00'");
     $result = mysqli_query($con, $sql);
     $resultado = mysqli_fetch_all($result, MYSQLI_ASSOC);
     return $resultado;
@@ -64,14 +64,14 @@ $postos = postos($con);
                 <?php foreach ($usuarios as $usuario) : ?>
 
                     <?php if ($usuario['department'] == $posto['department']) : ?>
-
-                        <?php if ($usuario['confirmado'] == 1) : ?>
-
+            
                             <?php if ($agora < $inicio_jantista || $agora > $fim_jantista) : ?>
 
                                 <?php limparJantista($con, $id); ?>
 
                             <?php endif; ?>
+
+                        <?php if ($usuario['confirmado'] == 1) : ?>
 
                             <div class="col-sm-3 offset-1">
                                 <b>RE: </b> <?= $usuario['re']; ?> <br>
