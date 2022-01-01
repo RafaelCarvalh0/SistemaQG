@@ -57,7 +57,7 @@
 
     <footer>
         <div class="footer">
-            Todos os direitos reservados.
+            &copy; 2022 Todos os direitos reservados.
         </div>
     </footer>
 
