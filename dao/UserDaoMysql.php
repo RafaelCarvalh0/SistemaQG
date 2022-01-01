@@ -25,6 +25,7 @@ class UserDaoMysql implements UserDAO
         $u->journey = $array['journey'] ?? '';
         $u->login = $array['login'] ?? '';
         $u->password = $array['password'] ?? '';
+        $u->confirmado = $array['confirmado'] ?? 0;
         $u->token = $array['token'] ?? '';
 
         return $u;
@@ -113,6 +114,7 @@ class UserDaoMysql implements UserDAO
             journey = :journey,
             login = :login,
             password = :password,
+            confirmado = :confirmado,
             token = :token
             WHERE id = :id");
 
@@ -123,6 +125,7 @@ class UserDaoMysql implements UserDAO
         $sql->bindValue(':journey', $u->journey);
         $sql->bindValue(':login', $u->login);
         $sql->bindValue(':password', $u->password);
+        $sql->bindValue(':confirmado', $u->confirmado);
         $sql->bindValue(':token', $u->token);
         $sql->bindValue(':id', $u->id);
         $sql->execute();
