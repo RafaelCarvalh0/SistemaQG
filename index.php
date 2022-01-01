@@ -28,7 +28,7 @@ function naoConfirmado($con)
 
 function limparPosto($con, $id)
 {
-    $sql = ("UPDATE usuarios SET confirmado = 0");
+    $sql = ("UPDATE usuarios SET confirmado = 0  WHERE (journey = '18:00 AS 06:00') OR (journey = '18:00 AS 00:00') OR (journey = '10:00 AS 22:00')");
     $result = mysqli_query($con, $sql);
     $resultado = mysqli_fetch_all($result, MYSQLI_ASSOC);
     return $resultado;
@@ -69,14 +69,14 @@ $usuarios = naoConfirmado($con);
                 <?php foreach ($usuarios as $usuario) : ?>
 
                     <?php if ($usuario['department'] == $posto['department']) : ?>
-
-                        <?php if ($usuario['confirmado'] == 1) : ?>
-
+            
                             <?php if ($agora < $inicio_noturno && $agora > $fim_noturno) : ?>
 
                                 <?php limparPosto($con, $id); ?>
 
                             <?php endif; ?>
+
+                        <?php if ($usuario['confirmado'] == 1) : ?>
 
                             <div style="background-color: #01b18bb6;" class="col-4 col-sm-2">
                                 <b id="usp">USP</b>
