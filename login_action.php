@@ -9,7 +9,7 @@ $auth = new Auth($pdo, $base);
 
 
 if ($auth->validateLogin($login, $password)) { //
-    $profile = $auth->validateProfile($login);
+    //$profile = $auth->validateProfile($login);
 
     if ($profile == 'admin') {
         header("Location: " . $base);
