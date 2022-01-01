@@ -183,7 +183,7 @@ form a:hover{
 .col-4{
     margin: 20px ;
     border-radius: 5px;
-    background-color: rgba(175, 47, 47, 0.7);
+    background-color: rgba(175, 47, 47, 0.8);
     min-width: 250px !important;
     width: 300px !important;
     /*border-radius: 80px; 
@@ -230,9 +230,6 @@ form a:hover{
 #linha p {
     color: white;
 }
-
-
-
 
 /* ------------------------------------------------------ PÁGINA JANTISTA   ---------------------------*/
 
@@ -289,41 +286,6 @@ form a:hover{
             text-align: center;
         }
 
-        #botao-sair {
-            margin: 50px auto;
-            text-align: center;
-        }
-
-        #botao-sair h1 {
-            font-size: 1.6em;
-            color: #FF3030;
-        }
-
-        #botao-sair button {
-            margin-top: 10px;
-            padding: 10px;
-            font-size: 1.5em;
-            width: 100px;
-            height: 50px;
-            font-weight: bold;
-            border-radius: 5px;
-            background-color: #D60000;
-            color: white;
-            border: 1px solid #CCC;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        #botao-sair button:hover {
-            background-color: #A00000;
-        }
-
-
-
-
-
-
-/*-------------------------------------------------------------TELA DE CONFIRMAÇÃO (FORA DO HORÀRIO DE TRABALHO -------------------------------*/
 
 #logo-tela-confirmar {
     background-color: black;
@@ -339,7 +301,7 @@ form a:hover{
 }
 
 #botao-sair h1 {
-    font-family: 'geneva';
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.6em;
     text-align: center;
     margin: 20px 20px;
