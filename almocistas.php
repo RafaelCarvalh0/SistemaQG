@@ -6,7 +6,7 @@ include 'confirmacao_action.php';
 
 function naoConfirmado($con)
 {
-    $sql = ("SELECT re, name, department, journey FROM usuarios WHERE journey = '10:00 AS 14:00'");
+    $sql = ("SELECT * FROM usuarios WHERE journey = '10:00 AS 14:00'");
     $result = mysqli_query($con, $sql);
     //$rows = mysqli_num_rows($result);
     $usuarios = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -25,7 +25,7 @@ function postos($con)
 
 function limparAlmocista($con, $id)
 {
-    $sql = ("UPDATE usuarios SET confirmado = 0");
+    $sql = ("UPDATE usuarios SET confirmado = 0 WHERE journey = '10:00 AS 14:00'");
     $result = mysqli_query($con, $sql);
     $resultado = mysqli_fetch_all($result, MYSQLI_ASSOC);
     return $resultado;
@@ -67,15 +67,15 @@ $postos = postos($con);
                 <?php foreach ($usuarios as $usuario) : ?>
 
                     <?php if ($usuario['department'] == $posto['department']) : ?>
-
-                        <?php if ($usuario['confirmado'] == 1) : ?>
-
+            
                             <?php if ($agora < $inicio_jantista || $agora > $fim_jantista) : ?>
 
                                 <?php limparAlmocista($con, $id); ?>
 
                             <?php endif; ?>
 
+                        <?php if ($usuario['confirmado'] == 1) : ?>
+            
                             <div class="col-sm-3 offset-1">
                                 <b>RE: </b> <?= $usuario['re']; ?> <br>
                                 <b>ALMOCISTA:</b> <?= $usuario['name']; ?> <br>
