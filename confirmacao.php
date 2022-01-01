@@ -11,9 +11,41 @@ $re = $userInfo->re;
 $jantista = $userInfo->name;
 $departamento = $userInfo->department;
 $jornada = $userInfo->journey;
-
+$confirmado = $userInfo->confirmado;
 
 ?>
+
+<?php if($confirmado==1) : ?>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+        <link rel="stylesheet" href="<?= $base; ?>/assets/css/estilo.css" />
+    </head>
+
+    <body id="body-confirmacao">
+
+        <div id="logo-confirmacao">
+            <img src="<?= $base; ?>/assets/images/LOGO QG2.png" width="250" alt="">
+        </div>
+
+        <div id="botao-sair">
+            <h1>VOCÊ JÁ CONFIRMOU SEU POSTO!</h1>
+            <a href="<?= $base; ?>/login.php">
+                <button> SAIR </button>
+            </a>
+        </div>
+
+    </body>
+}
+
+<?php exit; ?>
+
+<?php endif; ?>
 
 <!--ALERTA DE LOGIN PARA INTEGRAL NOTURNO CONFIRMANDO FORA DE HORA -->
 <?php if ($jornada == '18:00 AS 06:00') : ?>
@@ -237,7 +269,7 @@ $jornada = $userInfo->journey;
 
                 <b>JORNADA: </b> <?= $jornada; ?><br>
 
-                <a href="confirmacao_action.php?id=<?= $id; ?>&&re=<?= $re; ?>&&nome=<?= $jantista; ?>&&departamento=<?= $departamento; ?>&&jornada=<?= $jornada; ?>"> <button id="botao" type="submit">CONFIRMAR ENTRADA</button> </a>
+                <a href="confirmacao_action.php?id=<?= $id; ?>&&re=<?= $re; ?>&&nome=<?= $jantista; ?>&&departamento=<?= $departamento; ?>&&jornada=<?= $jornada; ?>&&confirmado=<?= $confirmado; ?>"> <button id="botao" type="submit">CONFIRMAR ENTRADA</button> </a>
 
 
             </div>
